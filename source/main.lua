@@ -21,7 +21,7 @@ function playdate.update()
     end
 
     if keyboard == "" then
-        gfx.drawTextInRect("*" .. initial .. "*", 16, 16)
+        gfx.drawText("*" .. initial .. "*", 16, 16)
         kbd.show(keyboard)
     else
         gfx.drawTextInRect(
