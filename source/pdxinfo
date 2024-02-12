@@ -1,0 +1,7 @@
+name=Notee
+author=Ampersanda
+description=Simple note taking app for PlayDate
+bundleID=dev.ampersanda.notee
+version=1.0
+imagePath=SystemAssets/
+buildNumber=1
