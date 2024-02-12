@@ -21,10 +21,14 @@ function playdate.update()
     end
 
     if keyboard == "" then
-        gfx.drawText(initial, 16, 16)
+        gfx.drawTextInRect("*" .. initial .. "*", 16, 16)
         kbd.show(keyboard)
     else
-        gfx.drawText(keyboard, 16, 16)
+        gfx.drawTextInRect(
+                "*" .. keyboard .. "*", 16, 16,
+                playdate.display.getWidth() - 32,
+                playdate.display.getHeight() - 64
+        )
     end
 
     gfx.drawTextAligned("*Press* Ⓐ *to edit*", playdate.display.getWidth() - 16, playdate.display.getHeight() - 32, kTextAlignment.right)
